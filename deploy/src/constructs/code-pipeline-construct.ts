@@ -80,6 +80,7 @@ export class CodePipelineConstruct extends Construct {
     // Create a new CodePipeline
     const pipeline = new cdk.aws_codepipeline.Pipeline(this, 'CodePipeline', {
       pipelineName: 'GenAIMoviePosterPipeline',
+      pipelineType: cdk.aws_codepipeline.PipelineType.V2,
       artifactBucket: new cdk.aws_s3.Bucket(this, 'ArtifactBucket', {
         removalPolicy: cdk.RemovalPolicy.DESTROY,
         autoDeleteObjects: true,
