@@ -11,6 +11,9 @@ bedrock = boto3.client(
     region_name='us-west-2'
 )
 
+image_files = [os.path.join("images", f) for f in os.listdir(
+    "images") if os.path.isfile(os.path.join("images", f))]
+
 
 def image_mod(image):
     byte_arr = io.BytesIO()
@@ -88,9 +91,6 @@ def image_mod(image):
     return html_table
 
 
-image_files = [os.path.join("images", f) for f in os.listdir(
-    "images") if os.path.isfile(os.path.join("images", f))]
-
 demo = gr.Interface(
     fn=image_mod,
     inputs=gr.Image(type="pil"),
@@ -100,4 +100,8 @@ demo = gr.Interface(
     description="Flag poster that are not in semantic compliance with custom policies using Gen AI.",
 )
 
-demo.launch()
+if ("GRADIO_USERNAME" in os.environ) and ("GRADIO_PASSWORD" in os.environ):
+    demo.launch(server_name="0.0.0.0", server_port=80, auth=(
+        os.environ['GRADIO_USERNAME'], os.environ['GRADIO_PASSWORD']))
+else:
+    demo.launch(server_name="0.0.0.0", server_port=80)
