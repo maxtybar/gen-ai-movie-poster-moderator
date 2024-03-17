@@ -7,8 +7,7 @@ import io
 import pandas as pd
 
 bedrock = boto3.client(
-    service_name='bedrock-runtime',
-    region_name='us-west-2'
+    service_name='bedrock-runtime'
 )
 
 image_files = [os.path.join("images", f) for f in os.listdir(
