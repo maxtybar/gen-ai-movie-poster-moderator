@@ -3,7 +3,7 @@ Flag poster that are not in semantic compliance with custom policies using Gen A
 
 Media companies want to review movie posters for specific markets for compliance before they publish them. For example, in China movie posters should not show bones. These moderation requirements need to be customizable and should not require additional training. Gen AI Movie Poster Moderator takes a movie poster and evaluates it for customizable and nuanced conditions. It can detect nuances like sharks vs sharks eating humans.  If a condition fails it flags the poster and provides the reason why it failed.
 
-![Gradio Workflow](https://iili.io/JXKJ7Mg.gif)
+![Gradio Workflow](https://github.com/maxtybar/gen-ai-movie-poster-moderator/assets/61300968/ac22a11a-fe07-401f-b20f-e43ea657a154)
 
 ## Services and technologies used
 
