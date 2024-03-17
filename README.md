@@ -22,7 +22,7 @@ Clone current repository:
 git clone https://github.com/maxtybar/gen-ai-movie-poster-moderator.git
 ```
 
-Navigate to the cloned repository in your terminal/shell. All of the commands are to be executed from the project's root folder/repo that you just cloned.
+Navigate to the cloned repository in your terminal/shell and then `cd` into [deploy](./deploy/) folder. All of the commands are to be executed from this folder.
 
 
 ```
@@ -36,7 +36,7 @@ If this is your first time deploying infrastructure using AWS CDK for the partic
 cdk bootstrap
 ```
 
-
+> [!IMPORTANT]
 > Think about a username and password and save it in local environment variables. You will use this username and password to authenticate in the Gradio app later on.
 
 Substitute <> fields with your username and password and execute this command in the terminal/command line:
