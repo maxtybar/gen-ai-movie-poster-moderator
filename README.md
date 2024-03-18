@@ -17,6 +17,10 @@ Media companies want to review movie posters for specific markets for compliance
 * [AWS Application Load Balancer (AWS ALB)](https://aws.amazon.com/elasticloadbalancing/application-load-balancer/) - Scalable Traffic Distribution
 * [Gradio](https://www.gradio.app/) - Python Library that simplifies building Machine Learning Apps
 
+## Architecture
+
+![gen-ai-movie-poster-moderator architecture](https://github.com/maxtybar/gen-ai-movie-poster-moderator/assets/61300968/34f50110-500d-45fb-a891-4d8e787575d2)
+
 ## Prerequisites
 
 Deployment has been tested on MacOS, Windowsa and Linux machines. Installation guide assumes you have AWS account and Administrator Access to provision all the resources. Make sure you have access to `Anthropic's Claude 3 Sonnet model` on Amazon Bedrock and your credentials stored in `~/.aws/credentials` (MacOS) or `C:\Users\username\.aws\credentials` (Windows).
