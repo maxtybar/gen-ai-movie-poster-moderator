@@ -84,9 +84,7 @@ After you log in you will get to the main page:
 
 ![Main page](https://iili.io/JXFsJyJ.png)
 
-Test out using preuploaded images or upload one of yours. Here is a quick example of execution with the ***Fear and Loathing in Las Vegas*** poster:
-
-![Fear and Loathing in Las Vegas poster](https://iili.io/JXFs2Tv.png)
+Test out using preuploaded images or upload one of yours.
 
 ## Conclusion
 
