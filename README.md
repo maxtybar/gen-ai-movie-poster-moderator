@@ -1,3 +1,6 @@
+> [!CAUTION]
+> Due to AWS sunsetting the AWS CodeCommit service this solution will fail to be deployed. CodeCommit can be substituted by an Amazon S3 bucket. This solution is currently being reworked and will be updated soon.
+
 # Gen AI Movie Poster Moderator
 Flag poster that are not in semantic compliance with custom policies using Gen AI.
 
